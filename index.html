@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>부천 타임라이드</title>
+  <link rel="stylesheet" href="/src/style.css" />
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "/node_modules/three/build/three.module.js",
+      "three/addons/": "/node_modules/three/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="subtitle" aria-live="polite">
+    <p id="speaker" hidden></p>
+    <p id="cue"></p>
+  </div>
+  <div id="hint-left" class="look-hint" hidden>◀</div>
+  <div id="hint-right" class="look-hint" hidden>▶</div>
+  <div id="debug" hidden></div>
+  <button id="start-btn" class="ride-btn" type="button">시간여행 시작하기</button>
+  <button id="replay-btn" class="ride-btn" type="button" hidden>다시 타기</button>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
